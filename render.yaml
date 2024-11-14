@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: news-prediction-app  # You can change this name as you prefer
+    env: docker  # Specifies Docker as the environment
+    plan: starter  # Choose a Render plan
+
+    # Path to Dockerfile for building the container
+    dockerfilePath: Dockerfile
+
+    # Environment variables, including those Flask might require
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: "5000"  # Ensure the PORT variable matches your app's port
+
+    # Health check (optional): define a route like '/predict' or '/'
+    healthCheckPath: "/predict"
