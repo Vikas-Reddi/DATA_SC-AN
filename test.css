@@ -1,0 +1,173 @@
+body  {
+    
+    width: 400px;
+    height: auto;
+    max-height: 1000px;
+    overflow: hidden;
+    margin: 0;  /* Optional: remove any margin */
+    padding: 0;
+    
+}
+.body_loading {
+    background-color: #ffffff  ;
+   
+    
+    overflow: hidden;
+    height: auto;
+}
+img {
+    float: left;
+    margin-right: 15px;
+    padding-left: 3% ;
+}
+.content {
+    background-color:#f1f1f1 ;
+    padding: 5%;
+    height:auto;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 2%;
+}
+
+.prid_loading {
+    width : 27px;
+    height: 27px;
+    background-color: #CCC8C8;
+    border-radius: 20px;
+    
+}
+.h2_loading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 30%;
+    
+}
+.loading {
+    opacity: 40%;
+    animation: rotate 2s linear infinite;
+}
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+  @keyframes colorChange {
+    0% {
+      background-color: #ffffff;
+    }
+    100% {
+      background-color: #218C45;
+      opacity: 90%;
+    }
+    
+  }
+  @keyframes colorChange2 {
+    0% {
+      background-color: #ffffff;
+    }
+    100% {
+      background-color: #D95639;
+      opacity: 90%;
+    }
+    
+  } 
+.top {
+    border-radius: 20px;
+    padding: 5%;
+}
+.h1_real {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 2%;
+    color: #ffffff ;
+}
+.h1_fake {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 2%;
+    color: #ffffff ;
+}
+.h1_loading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 2%;
+    
+}
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-left: 30%;
+}
+.h3_real {
+font-size: 15px;
+color:#ffffff;
+}
+.h3_fake {
+    font-size: 15px;
+    color:#ffffff;
+    }
+.h3_loading {
+    font-size: 15px;
+    
+}
+.h3_ERROR {
+    font-size: 15px;
+}
+.fake {
+    opacity: 40%;
+}
+.real {
+    opacity: 40%;
+    
+}
+.prid_fake {
+    width : 92px;
+    height: 27px;
+    background-color: #FFFCFC;
+    border-radius: 20px;
+    color: #891e1e;
+    
+}
+.prid_real {
+    width : 92px;
+    height: 27px;
+    background-color: #FFFCFC;
+    border-radius: 20px;
+    color: #218c45;
+    
+}
+
+.body_real{
+
+    background-color: #218C45  ;
+    overflow: hidden;
+    height: auto;
+    animation: colorChange 0.5s ease-in-out;
+
+}
+.body_fake {
+    background-color: #D95639  ;
+    opacity: 90%;
+    overflow: hidden;
+    height: auto;
+    animation: colorChange2 0.5s ease-in-out;
+}
+
+.data-content {
+    font-family: 'Times New Roman', Times, serif ;
+    font-size: 15px;
+    line-height: 1.5;
+    
+}
